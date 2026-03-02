@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Login - MedicoNext</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            width: 400px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: #008080;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .login-container label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #00bfa5;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+
+        .login-container input:focus {
+            border-color: #005959;
+            outline: none;
+        }
+
+        .login-container a {
+            display: block;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            color: #008080;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .login-container a:hover {
+            color: #005959;
+            text-decoration: underline;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #008080;
+            border: none;
+            color: white;
+            font-size: 1.1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #005959;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>Hospital Login</h1>
+        <form action="hospital_login.php" method="POST">
+            <label for="hospitalId">Email</label>
+            <input type="text"  name="email" placeholder="Enter your Email ID" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+
+            <a href="forgot_password.html">Forgot Password?</a>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+</body>
+</html>
